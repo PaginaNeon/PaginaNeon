@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #141414;
+    color: #00ff00;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 0 0 10px #00ff00;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #141414;
+}
+
+nav a {
+    color: #00ffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 0 5px #00ffff;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+nav a:hover {
+    background-color: #00ffff;
+    color: #000;
+    text-shadow: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background-color: #141414;
+    color: #ff00ff;
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 0 0 10px #ff00ff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+.content-section {
+    margin: 2rem 0;
+}
+
+.button {
+    background-color: #ff00ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ff00ff;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+    }
+}
